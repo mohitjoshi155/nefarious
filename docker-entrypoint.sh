@@ -7,4 +7,4 @@
 /env/bin/python manage.py nefarious-init ${NEFARIOUS_USER-admin} ${NEFARIOUS_EMAIL-admin@localhost} ${NEFARIOUS_PASS-admin}
 
 # run app
-/env/bin/uvicorn --workers 2 --port $port -- nefarious.asgi:application
+/env/bin/uvicorn --workers 2 --port $PORT -- nefarious.asgi:application
