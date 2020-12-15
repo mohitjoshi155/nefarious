@@ -6,4 +6,4 @@ run:
   worker:
     command: 
     - ./app/docker-entrypoint.sh
-    image:worker
+    image: worker
