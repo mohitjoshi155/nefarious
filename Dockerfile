@@ -6,7 +6,9 @@ ADD src /app
 # add the docker entrypoint
 ADD docker-entrypoint.sh /app
 
-ENV PORT 
+ENV PORT=$PORT
+
+EXPOSE $PORT
 
 WORKDIR /app
 
