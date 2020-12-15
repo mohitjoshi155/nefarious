@@ -3,5 +3,8 @@ build:
     web: Dockerfile
 run:
   web: uvicorn --port $PORT 
-  worker: /app/docker-entrypoint.sh
+  worker:
+    command:
+      - ./app/docker-entrypoint.sh
+    image: web
     
