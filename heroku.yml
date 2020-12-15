@@ -2,4 +2,6 @@ build:
   docker:
     web: Dockerfile
 run:
-  web:uvicorn --port $PORT /app/docker-entrypoint.sh
+  web:uvicorn --port $PORT 
+  worker:
+    command: /app/docker-entrypoint.sh
