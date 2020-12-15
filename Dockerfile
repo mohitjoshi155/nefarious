@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-EXPOSE 80
-
 # add the main app
 ADD src /app
 
